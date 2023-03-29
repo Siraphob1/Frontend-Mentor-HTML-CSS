@@ -168,6 +168,8 @@ body{
     background-image: linear-gradient(to top
     , var(--Color-Light-royal-blue-background)
     , var(--Color-Light-slate-blue-background));
+
+    cursor: pointer;
 }
 
 .group-topic{
@@ -232,4 +234,34 @@ body{
 }
 .visual{
     color: var(--Color-Cobalt-blue);
+}
+
+
+
+@media screen and (max-width:500px) {
+    body{        
+        height: 100vh;
+       
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: var(--Mobile-size);
+        height: 100vh;  
+             
+       
+    }
+    .card-left{
+        width: 50%;
+
+        border-radius: 0 0 20px 20px;
+
+        padding-top: 15px;
+    }
+
+    
+    .card-right{
+        width: 50%;
+    }
 }
